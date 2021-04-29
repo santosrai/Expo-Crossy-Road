@@ -1,0 +1,25 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: expo
+    versions:
+    - 40.0.1
+    - 41.0.0
+  - dependency-name: three
+    versions:
+    - 0.125.2
+    - 0.126.0
+    - 0.126.1
+    - 0.127.0
+  - dependency-name: gsap
+    versions:
+    - 3.6.0
+  - dependency-name: react-navigation
+    versions:
+    - 4.4.3
